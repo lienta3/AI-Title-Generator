@@ -19,11 +19,7 @@ function generateTitles(event) {
 
   let titleElement = document.querySelector("#titles");
   titleElement.classList.remove("hidden");
-  titleElement.innerHTML = "Generating hook titles...";
-
-  console.log("generatingTitles");
-  console.log(`prompt:${prompt}`);
-  console.log(`context:${context}`);
+  titleElement.innerHTML = `Generating hook titles about ${userInput.value}`;
 
   axios.get(apiUrl).then(displayTitles);
 }
