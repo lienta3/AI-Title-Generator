@@ -23,7 +23,7 @@
         <form id="title-generator-form">
           <input
             type="text"
-            placeholder="Enter a topic"
+            placeholder="Enter a topic that you want to generate titles for.."
             required
             autofocus
             autocomplete="off"
@@ -31,8 +31,9 @@
             id="user-input"
           />
           <input type="submit" class="submit-button" />
+          <div class="hint">i.e: cats, dancing</div>
         </form>
-        <div class="output-response" id="titles"></div>
+        <div class="titles hidden" id="titles"></div>
       </main>
       <footer>
         This AI project was coded by

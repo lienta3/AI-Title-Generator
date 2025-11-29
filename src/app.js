@@ -17,6 +17,10 @@ function generateTitles(event) {
     "You are a clever marketing copywrite expert. Provide 5 viral hook titles. Display the results in basic HTML directly. Do not use code blocks. Do not include a title for the results. Display the results in paragraph size.  Make sure to follow the user input. ";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let titleElement = document.querySelector("#titles");
+  titleElement.classList.remove("hidden");
+  titleElement.innerHTML = "Generating hook titles...";
+
   console.log("generatingTitles");
   console.log(`prompt:${prompt}`);
   console.log(`context:${context}`);
