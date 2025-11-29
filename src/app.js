@@ -1,8 +1,12 @@
 function generateTitles(event) {
   event.preventDefault();
 
-  let titlesElement = document.querySelector("#titles");
-  titlesElement.innerHTML = "results here";
+  new Typewriter("#titles", {
+    strings: "response here",
+    autoStart: true,
+    delay: 1,
+    cursor: "",
+  });
 }
 
 let titleFormElement = document.querySelector("#title-generator-form");
